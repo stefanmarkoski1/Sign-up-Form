@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up-Form</title>
+    <style>
+	@font-face{
+		font-family: Norse-Bold;
+		src: url("Font/Norse-Bold.otf")
+	}
+	
+	
+	
+	.Image
+	{
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 25%;
+		height: 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		z-index: -1;
+		background-size: cover;
+		background-image: url("Photos/Background.jpg"); 
+	}
+	
+	.Content
+	{
+		position: fixed;
+		right: 0;
+		top: 0;
+		width: 75%;
+		height: 30%;
+		background-color: #f7f7f7;
+		
+
+	}
+	
+	.Form
+	{
+	    
+		position: fixed;
+		right: 0;
+		bottom: 30%;
+		top:30%;
+		width: 75%;
+		height: 60%;
+	}
+	
+	.FormContent
+	{
+		padding-top: 0.5%;
+		padding-right:2%;
+		padding-left:5%;
+		font-size: 1.3em;
+		font-family: helvetica;
+		padding-bottom:30%;
+		max-width: 700px;  
+
+	}
+	
+	.FormContent form
+	{
+		
+		display: flex;
+		flex-direction:column;
+		gap: 1.5em;
+		font-size: 0.8em;
+		width:100%;
+		
+	}
+	
+	.formRow {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 2em;
+		row-gap: 0.5em;
+		width: 100%;
+	}
+	
+	label
+	{
+		padding: 4px;
+		
+	}
+	
+	input
+	{
+		padding: 4px;
+		width: 90%;
+		box-sizing: border-box;
+
+	}
+	
+	
+	
+	.BottomContent
+	{
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		width: 75%;
+		height: 30%;
+		background-color: #f7f7f7;
+		
+
+	}
+	
+	.BottomContentText
+	{
+		padding-top: 3%;
+		padding-right:5%;
+		padding-left:5%;
+		padding-bottom:2%;
+		font-family: helvetica;
+		font-size: 1em;
+		
+
+	}
+	
+	
+	.ContentText
+	{
+		padding-top: 3%;
+		padding-right:5%;
+		padding-left:5%;
+		padding-bottom:2%;
+		font-family: helvetica;
+		font-size: 0.8em;
+	
+	}
+	
+	.LogIn
+	{	
+		font-family: helvetica;
+		font-size: 1em;
+		color: #596D48;
+	}
+	
+	.Logo
+	{
+		position: absolute;
+		width:100%;
+		height: 15%;
+		display: flex;
+		background: rgba(0,0,0,0.5);
+		font-family: Norse-Bold;
+		font-size: 2em;
+		align-items: center;
+		gap:1em;
+		color: white;
+	}
+	
+	.LogoImg img
+	{
+		height: 10vh;
+		width: auto;
+	}
+	
+	.Empty-Space
+	{
+		height:25vh;
+	}
+	
+	.footer
+	{
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		color:white;
+		text-align: center;
+		padding-bottom: 5%;.
+		font-size: 0.7em;
+
+	}
+	
+	.FormTitle
+	{
+		font-family: helvetica;
+		padding-top: 3%;
+		padding-right:2%;
+		padding-left:5%;
+		font-size: 1.3em;
+
+
+	}
+	
+	.Button
+	{
+		background: #596D48;
+		padding-top: 1%;
+		padding-right:4%;
+		padding-left:4%;
+		padding-bottom:1%;
+		border-radius: 10px;
+		color:white;
+		box-shadow: 2px 2px 5px rgba(0,0,0,1);
+	}
+	
+	a {
+		color: inherit;       /* inherit text color from parent */
+		text-decoration: none; /* remove underline */
+	}
+	
+	
+	
+	@media (max-width: 768px) {
+	.Logo {
+		flex-direction: column;    /* stack logo above text */
+		font-size: 1em;          /* smaller text */
+		gap: 0.5em;
+	}
+
+	.LogoImg img {
+		height: 7vh;               /* smaller logo on phones */
+	}
+	
+	.footer
+	{
+		font-size: 0.6em;
+	}
+	
+	.Content
+	{
+		
+		font-size: 0.6em;
+
+	}
+	
+	.BottomContentText
+	{
+		
+		font-size: 0.8em;
+		
+
+	}
+	
+	.LogIn
+	{	
+		
+		font-size: 0.9em;
+		
+	}
+	
+	.FormContent
+	{
+		
+		font-size: 0.9em;
+	
+	}
+	
+	
+	.FormTitle
+	{
+		
+		font-size: 0.9em;
+
+	}
+	}
+	
+	
+	
+	
+	
+    </style>
+</head>
+<body>
+	
+<div class = "Image"> 
+<div class = "Empty-Space">
+</div>
+	<div class = "Logo">
+			<div class = "LogoImg">
+			<img src = "Photos/Logo.png">
+			</div>
+	<p>Stefan Markoski</p>
+	</div>
+	<div class = "footer">Photo by <a href ="https://unsplash.com/@haliewestphoto"> <u>Halie West</u></a> 
+	on <a href ="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA"><u>Unsplash</u></a></div>
+</div>
+
+<div class = "Content"><h1>
+<div class = "ContentText">
+ <p> This is not a real online service! You know you need something<br>
+like this in your life to help you realize your deepest dreams.<br>
+<b>Sign up <i>now</i> to get started.</b><br>
+
+<br>You <i>know</i> you want to.</p>
+
+</div></h1>
+</div>
+
+
+<div class="Form">
+
+<div class="FormTitle">
+<b>Let's do this!</b><br>
+<br>
+</div>
+<div class = "FormContent">
+
+<form action = "example.com/path" method="post">
+<div class = "formRow">
+<label for = "first_name">First Name</label>
+<input type = "text" id = "first_name" placeholder="John">
+
+<label for = "last_name">Last Name</label>
+<input type = "text" id = "last_name" placeholder="Doe">
+</div>
+
+<div class = "formRow">
+<label for = "email">Email</label>
+<input type = "email" id = "email" placeholder="john.doe@company.com">
+
+<label for = "telephone">Phone Number</label>
+<input type = "tel" id = "telephone" placeholder="(555) 555-5555">
+</div>
+
+<div class = "formRow">
+<label for = "pass">Password</label>
+<input type = "password" id = "pass" placeholder="••••••••">
+
+<label for = "confirmPass">Confirm Password</label>
+<input type = "password" id = "confirmPass" placeholder="••••••••">
+</div>
+
+</form>
+
+</div>
+</div>
+
+<div class = "BottomContent">
+<div class ="BottomContentText">
+
+	<button class = "Button">Create Account</button>
+	<br>
+	<p>Already have an account? <a href = "#" class = "LogIn">Log in</a></div> </p>
+
+</div>
+</div>
+
+
+
+
+
+</body>
+</html>
