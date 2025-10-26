@@ -47,18 +47,20 @@
 		top:30%;
 		width: 75%;
 		height: 60%;
+		
 	}
 	
 	.FormContent
 	{
+	
 		padding-top: 0.5%;
 		padding-right:2%;
 		padding-left:5%;
 		font-size: 1.3em;
 		font-family: helvetica;
 		padding-bottom:30%;
-		max-width: 700px;  
-
+		max-width:700px;
+		
 	}
 	
 	.FormContent form
@@ -75,9 +77,15 @@
 	.formRow {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		column-gap: 2em;
+		column-gap: 1.5em;
 		row-gap: 0.5em;
 		width: 100%;
+	}
+	
+	.formField
+	{
+		display: flex;
+		flex-direction: column;
 	}
 	
 	label
@@ -194,7 +202,7 @@
 		padding-right:4%;
 		padding-left:4%;
 		padding-bottom:1%;
-		border-radius: 10px;
+		border-radius: 7px;
 		color:white;
 		box-shadow: 2px 2px 5px rgba(0,0,0,1);
 	}
@@ -302,28 +310,41 @@ like this in your life to help you realize your deepest dreams.<br>
 <div class = "FormContent">
 
 <form action = "example.com/path" method="post">
+
 <div class = "formRow">
+<div class = "formField">
 <label for = "first_name">First Name</label>
 <input type = "text" id = "first_name" placeholder="John">
+</div>
 
+<div class = "formField">
 <label for = "last_name">Last Name</label>
 <input type = "text" id = "last_name" placeholder="Doe">
 </div>
-
-<div class = "formRow">
-<label for = "email">Email</label>
-<input type = "email" id = "email" placeholder="john.doe@company.com">
-
-<label for = "telephone">Phone Number</label>
-<input type = "tel" id = "telephone" placeholder="(555) 555-5555">
 </div>
 
 <div class = "formRow">
+<div class = "formField">
+<label for = "email">Email</label>
+<input type = "email" id = "email" placeholder="john.doe@company.com">
+</div>
+
+<div class = "formField">
+<label for = "telephone">Phone Number</label>
+<input type = "tel" id = "telephone" placeholder="(555) 555-5555">
+</div>
+</div>
+
+<div class = "formRow">
+<div class = "formField">
 <label for = "pass">Password</label>
 <input type = "password" id = "pass" placeholder="••••••••">
+</div>
 
+<div class = "formField">
 <label for = "confirmPass">Confirm Password</label>
 <input type = "password" id = "confirmPass" placeholder="••••••••">
+</div>
 </div>
 
 </form>
